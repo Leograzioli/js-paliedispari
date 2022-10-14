@@ -1,5 +1,12 @@
-const oddOrEven = prompt("do you wanna play? choose odd or even:");
-const playerNumber = parseInt(prompt("please pic a number:"));
+let oddOrEven = prompt("do you wanna play? choose odd or even:");
+while (oddOrEven !== "odd" && oddOrEven !== "even") {
+     oddOrEven = prompt("you MUST choose between odd or even!!!");
+}
+
+let playerNumber = parseInt(prompt("please pic a number:"));
+while (isNaN(playerNumber)) {
+    playerNumber = parseInt(prompt("please pic a VALID number:"));
+}
 const computerNumber = randomGenerator(1, 10);
 const result = playerNumber + computerNumber;
 
