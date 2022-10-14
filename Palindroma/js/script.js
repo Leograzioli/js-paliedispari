@@ -1,4 +1,4 @@
-const userImput = prompt("Tell us a name");
+const userImput = prompt("Tell us a name").toLowerCase();
 
 isPalindroma(userImput);
 
