@@ -1,5 +1,8 @@
 const userImput = prompt("Tell us a name");
 
+isPalindroma(userImput);
+
+//FUNCTIONS
 
 //to know if the inputed word by the client is palindrome or not
 //userImput -> string 
@@ -17,10 +20,10 @@ function isPalindroma(name) {
         isEqual = true;
         alert("it is palindrome");
     } else {
-    console.log(isEqual);
-    alert("is not palindrome");
+        console.log(isEqual);
+        alert("is not palindrome");
     }
+
     return isEqual;
 }
 
-isPalindroma(userImput);
