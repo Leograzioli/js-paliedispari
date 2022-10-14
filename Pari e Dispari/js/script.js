@@ -10,13 +10,11 @@ while (isNaN(playerNumber)) {
 const computerNumber = randomGenerator(1, 10);
 const result = playerNumber + computerNumber;
 
-
 if (oddOrEven === isOddOrEven(result)) {
     alert(`${playerNumber} + ${computerNumber} =  ${isOddOrEven(result)}, you won`);
 } else {
     alert(`${playerNumber} + ${computerNumber} =  ${isOddOrEven(result)}, you lost`);
 }
-
 
 //FUNCTIONS
 
@@ -28,7 +26,6 @@ function randomGenerator(min, max) {
     const rdnNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
     return rdnNumber;
 }
-
 
 //to see if a number is odd or even
 //userChoise -> string

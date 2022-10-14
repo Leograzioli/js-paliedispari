@@ -8,6 +8,7 @@ isPalindroma(userImput);
 //userImput -> string 
 //retun -> bolean
 function isPalindroma(name) {
+
     let reverseName = "";
     for (let i = (name.length -1); i >= 0 ; i--) {
         const element = name[i];
@@ -26,4 +27,3 @@ function isPalindroma(name) {
 
     return isEqual;
 }
-
